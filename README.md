@@ -39,7 +39,10 @@ to compile an executable:
 
 * pip install pyinstaller
 * pyinstaller HippoDeep.spec
-* ---> find your executable under .\dist\HippoDeep.exe
+* your compiled executable should be under .\dist\HippoDeep.exe
+
+A precompiled Windows executable can be found under the Release section 
+<a href="https://github.com/bfoe/hippodeep_pytorch/releases/download/v0.1/HippoDeep.exe">here</a>
 
 ## Usage:
 To use the program, simply call:
