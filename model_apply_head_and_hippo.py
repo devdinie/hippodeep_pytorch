@@ -304,10 +304,10 @@ for fname in sys.argv[1:]:
         img = nibabel.load(fname)
 
         if img.header["qform_code"] == 0:
-            print(" *** Error: the header of this nifti file has no qform_code defined.")
+            print(" *** Warning: the header of this nifti file has no qform_code defined.")
             print(" Fix the header manually or reconvert from the original DICOM.")
-            if not OUTPUT_DEBUG:
-                continue
+            #if not OUTPUT_DEBUG:
+            #    continue
     except:
         open(fname + ".warning.txt", "a").write("can't open the file\n")
         print(" *** Error: can't open file. Skip")
@@ -562,15 +562,33 @@ for fname in sys.argv[1:]:
         dnat[dnat < 32] = 0 # remove noise
         volsAA_L = dnat.sum() / 255. * np.abs(np.linalg.det(img.affine))
         wdata[pmin[0]:pmin[0]+pwidth[0], pmin[1]:pmin[1]+pwidth[1], pmin[2]:pmin[2]+pwidth[2]] = dnat.astype(np.uint8)
-        nibabel.Nifti1Image(wdata.astype("uint8"), img.affine).to_filename(outfilename.replace("_tiv", "_mask_L"))
-
+        #nibabel.Nifti1Image(wdata.astype("uint8"), img.affine).to_filename(outfilename.replace("_tiv", "_mask_L"))
+        #transcribe parameters from original header
+        img_out = nibabel.Nifti1Image(wdata.astype("uint8"), img.affine)
+        unit_xyz, unit_t = img.header.get_xyzt_units()
+        if unit_xyz == 'unknown': unit_xyz=0
+        if unit_t   == 'unknown': unit_t=0        
+        img_out.header.set_xyzt_units(unit_xyz, unit_t)
+        img_out.set_sform(img.affine, code=int(img.header['sform_code']))
+        img_out.set_qform(img.affine, code=int(img.header['qform_code']))
+        nibabel.save(img_out,outfilename.replace("_tiv", "_mask_L"))        
+        
         d = torch.tensor(output[1].T, dtype=torch.float32)
         outDHW = F.grid_sample(d[None,None], torch.tensor(DHW3[None]), align_corners=True)
         dnat = np.asarray(outDHW[0,0].T)
         dnat[dnat < 32] = 0 # remove noise
         volsAA_R = dnat.sum() / 255. * np.abs(np.linalg.det(img.affine))
         wdata[pmin[0]:pmin[0]+pwidth[0], pmin[1]:pmin[1]+pwidth[1], pmin[2]:pmin[2]+pwidth[2]] = dnat.astype(np.uint8)
-        nibabel.Nifti1Image(wdata.astype("uint8"), img.affine).to_filename(outfilename.replace("_tiv", "_mask_R"))
+        #nibabel.Nifti1Image(wdata.astype("uint8"), img.affine).to_filename(outfilename.replace("_tiv", "_mask_R"))
+        #transcribe parameters from original header
+        img_out = nibabel.Nifti1Image(wdata.astype("uint8"), img.affine)
+        unit_xyz, unit_t = img.header.get_xyzt_units()
+        if unit_xyz == 'unknown': unit_xyz=0
+        if unit_t   == 'unknown': unit_t=0        
+        img_out.header.set_xyzt_units(unit_xyz, unit_t)
+        img_out.set_sform(img.affine, code=int(img.header['sform_code']))
+        img_out.set_qform(img.affine, code=int(img.header['qform_code']))
+        nibabel.save(img_out,outfilename.replace("_tiv", "_mask_R"))  
 
         print(" Hippocampal volumes (L,R)", volsAA_L, volsAA_R)
         scalar_output.append([volsAA_L, volsAA_R])
