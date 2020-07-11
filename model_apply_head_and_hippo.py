@@ -8,7 +8,10 @@ import torch.nn.functional as F
 from numpy.linalg import inv
 if sys.platform=="win32": import psutil # this works for Windows
 else: import resource # Unix specific package, does not exist for Windoze
-from GetFilename import GetFilename
+try: from GetFilename import GetFilename
+except: pass
+try: from HippoDeepReport import HippoDeepReport
+except: pass
 
 # monkey-patch for back-compatibility with older (~1.0.0) torch
 import inspect
@@ -319,8 +322,9 @@ for fname in sys.argv[1:]:
         open(fname + ".warning.txt", "a").write("dim not 3. Averaging last dimension\n")
         d = d.mean(-1)
 
+    d_orig = d
     d = (d - d.mean()) / d.std()
-
+    
     o1 = nibabel.orientations.io_orientation(img.affine)
     o2 = np.array([[ 0., -1.], [ 1.,  1.], [ 2.,  1.]]) # We work in LAS space (same as the mni_icbm152 template)
     trn = nibabel.orientations.ornt_transform(o1, o2) # o1 to o2 (apply to o2 to obtain o1)
@@ -385,6 +389,7 @@ for fname in sys.argv[1:]:
         vol = (dnat > .5).sum() * np.abs(np.linalg.det(img.affine))
         print(" Estimated intra-cranial volume (mm^3) (native space): %d" % vol)
         scalar_output.append(vol)
+        brainmask = (dnat > .5).astype("uint8")
         del dnat
 
     if 0:
@@ -553,18 +558,18 @@ for fname in sys.argv[1:]:
 
         DHW3 = xyz_to_DHW3(widx, imgcroproi_affine, imgcroproi_shape)
 
-        wdata = np.zeros(img.shape, np.uint8)
-
+        wdata_L = np.zeros(img.shape, np.uint8)
+        wdata_R = np.zeros(img.shape, np.uint8)
 
         d = torch.tensor(output[0].T, dtype=torch.float32)
         outDHW = F.grid_sample(d[None,None], torch.tensor(DHW3[None]), align_corners=True)
         dnat = np.asarray(outDHW[0,0].T)
         dnat[dnat < 32] = 0 # remove noise
         volsAA_L = dnat.sum() / 255. * np.abs(np.linalg.det(img.affine))
-        wdata[pmin[0]:pmin[0]+pwidth[0], pmin[1]:pmin[1]+pwidth[1], pmin[2]:pmin[2]+pwidth[2]] = dnat.astype(np.uint8)
-        #nibabel.Nifti1Image(wdata.astype("uint8"), img.affine).to_filename(outfilename.replace("_tiv", "_mask_L"))
+        wdata_L[pmin[0]:pmin[0]+pwidth[0], pmin[1]:pmin[1]+pwidth[1], pmin[2]:pmin[2]+pwidth[2]] = dnat.astype(np.uint8)
+        #nibabel.Nifti1Image(wdata_L.astype("uint8"), img.affine).to_filename(outfilename.replace("_tiv", "_mask_L"))
         #transcribe parameters from original header
-        img_out = nibabel.Nifti1Image(wdata.astype("uint8"), img.affine)
+        img_out = nibabel.Nifti1Image(wdata_L.astype("uint8"), img.affine)
         unit_xyz, unit_t = img.header.get_xyzt_units()
         if unit_xyz == 'unknown': unit_xyz=0
         if unit_t   == 'unknown': unit_t=0        
@@ -578,10 +583,10 @@ for fname in sys.argv[1:]:
         dnat = np.asarray(outDHW[0,0].T)
         dnat[dnat < 32] = 0 # remove noise
         volsAA_R = dnat.sum() / 255. * np.abs(np.linalg.det(img.affine))
-        wdata[pmin[0]:pmin[0]+pwidth[0], pmin[1]:pmin[1]+pwidth[1], pmin[2]:pmin[2]+pwidth[2]] = dnat.astype(np.uint8)
-        #nibabel.Nifti1Image(wdata.astype("uint8"), img.affine).to_filename(outfilename.replace("_tiv", "_mask_R"))
+        wdata_R[pmin[0]:pmin[0]+pwidth[0], pmin[1]:pmin[1]+pwidth[1], pmin[2]:pmin[2]+pwidth[2]] = dnat.astype(np.uint8)
+        #nibabel.Nifti1Image(wdata_R.astype("uint8"), img.affine).to_filename(outfilename.replace("_tiv", "_mask_R"))
         #transcribe parameters from original header
-        img_out = nibabel.Nifti1Image(wdata.astype("uint8"), img.affine)
+        img_out = nibabel.Nifti1Image(wdata_R.astype("uint8"), img.affine)
         unit_xyz, unit_t = img.header.get_xyzt_units()
         if unit_xyz == 'unknown': unit_xyz=0
         if unit_t   == 'unknown': unit_t=0        
@@ -608,6 +613,19 @@ for fname in sys.argv[1:]:
     if OUTPUT_RES64:
         print("fslview %s %s -t .5 &" % (outfilename.replace("_tiv", "_affcrop"), outfilename.replace("_tiv", "_affcrop_outseg_mask")))
 
+    try:
+      text0 = "HippoDeep Report"
+      text1="Total Intracranial Volume:  "
+      text2="Left  Hippocampus  Volume:  "
+      text3="Right Hippocampus  Volume:  "
+      text1 += "{:.2f}".format(float(vol)/1000000,2)+" l" # transform mm^3 to liter
+      text2 += "{:.2f}".format(float(volsAA_L)/1000,2)+" ml" # transform mm^3 to mililiter   
+      text3 += "{:.2f}".format(float(volsAA_R)/1000,2)+" ml" # transform mm^3 to mililiter
+      filename = outfilename.replace("_tiv.nii.gz", ".pdf")
+      HippoDeepReport (d_orig, wdata_L, wdata_R, brainmask, text0, text1, text2, text3, filename)
+      print (" Generated PDF report")
+    except: print (" Generating PDF report failed") 
+       
     print(" Elapsed time for subject %4.2fs " % (time.time() - Ti))
     print(" To display using fslview, try:")
     print("  fslview %s %s -t .5 %s -t .5 &" % (fname, outfilename.replace("_tiv", "_mask_L"), outfilename.replace("_tiv", "_mask_R")))
