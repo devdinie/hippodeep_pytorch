@@ -33,7 +33,7 @@ The simplest way to install from scratch is maybe to use a Anaconda environment,
 
 * pip install numpy scipy nibabel
 * pip install torch==1.3.0+cpu -f https:&#8203;//download.pytorch.org/whl/torch_stable.html
-* pip install psutil pywin32
+* pip install psutil pywin32 fpdf2
 
 to compile an executable:
 
@@ -42,7 +42,7 @@ to compile an executable:
 * your compiled executable should be under .\dist\HippoDeep.exe
 
 A precompiled Windows executable can be found under the Release section 
-<a href="https://github.com/bfoe/hippodeep_pytorch/releases/download/v0.2/HippoDeep.exe">here</a>
+<a href="https://github.com/bfoe/hippodeep_pytorch/releases/download/v0.3/HippoDeep.exe">here</a>
 
 ## Usage:
 To use the program, simply call:
