@@ -514,19 +514,12 @@ def main():
     o1 = nib.orientations.io_orientation(img0.affine)
     o2 = np.array([[ 0., -1.], [ 1.,  1.], [ 2.,  1.]]) # We work in LAS space (same as the mni_icbm152 template)
     trn = nib.orientations.ornt_transform(o1, o2) # o1 to o2 (apply to o2 to obtain o1)
-    print (trn)
-    print (trn[0,0])
-    print (trn[1,0])
-    print (trn[2,0])
-    print (data0.shape)
-    print (SpatResol)
     data0 = nib.apply_orientation(data0, trn )
     data1 = nib.apply_orientation(data1, trn )
     data2 = nib.apply_orientation(data2, trn )
     data3 = nib.apply_orientation(data3, trn )
     SpatResol[int(trn[0,0])],  SpatResol[int(trn[1,0])], SpatResol[int(trn[2,0])] = SpatResol[0],  SpatResol[1], SpatResol[2]
-    print (data0.shape)
-    print (SpatResol)
+
     
     try: 
       with open(os.path.join(dirname,basename+"_hippoLR_volumes.csv")) as csv_file:
