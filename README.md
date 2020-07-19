@@ -33,7 +33,7 @@ The simplest way to install from scratch is maybe to use a Anaconda environment,
 
 * pip install numpy scipy nibabel
 * pip install torch==1.3.0+cpu -f https:&#8203;//download.pytorch.org/whl/torch_stable.html
-* pip install psutil pywin32 fpdf2
+* pip install psutil pywin32 pillow fpdf2
 
 to compile an executable:
 
