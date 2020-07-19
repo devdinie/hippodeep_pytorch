@@ -301,8 +301,7 @@ def indices_unitary(dimensions, dtype):
 
 for fname in sys.argv[1:]:
     Ti = time.time()
-    #try:
-    if 1:
+    try:
         print("Loading image " + fname)
         outfilename = fname.replace(".mnc", ".nii").replace(".nii.gz", ".nii").replace(".nii", "_tiv.nii.gz")
         img = nibabel.load(fname)
@@ -312,10 +311,10 @@ for fname in sys.argv[1:]:
             print(" Fix the header manually or reconvert from the original DICOM.")
             #if not OUTPUT_DEBUG:
             #    continue
-    #except:
-    #    open(fname + ".warning.txt", "a").write("can't open the file\n")
-    #    print(" *** Error: can't open file. Skip")
-    #    continue
+    except:
+        open(fname + ".warning.txt", "a").write("can't open the file\n")
+        print(" *** Error: can't open file. Skip")
+        continue
 
     d = img.get_fdata(caching="unchanged", dtype=np.float32)
     while len(d.shape) > 3:
