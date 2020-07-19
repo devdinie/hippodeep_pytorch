@@ -301,7 +301,8 @@ def indices_unitary(dimensions, dtype):
 
 for fname in sys.argv[1:]:
     Ti = time.time()
-    try:
+    #try:
+    if 1:
         print("Loading image " + fname)
         outfilename = fname.replace(".mnc", ".nii").replace(".nii.gz", ".nii").replace(".nii", "_tiv.nii.gz")
         img = nibabel.load(fname)
@@ -311,10 +312,10 @@ for fname in sys.argv[1:]:
             print(" Fix the header manually or reconvert from the original DICOM.")
             #if not OUTPUT_DEBUG:
             #    continue
-    except:
-        open(fname + ".warning.txt", "a").write("can't open the file\n")
-        print(" *** Error: can't open file. Skip")
-        continue
+    #except:
+    #    open(fname + ".warning.txt", "a").write("can't open the file\n")
+    #    print(" *** Error: can't open file. Skip")
+    #    continue
 
     d = img.get_fdata(caching="unchanged", dtype=np.float32)
     while len(d.shape) > 3:
@@ -622,7 +623,15 @@ for fname in sys.argv[1:]:
       text2 += "{:.2f}".format(float(volsAA_L)/1000,2)+" ml" # transform mm^3 to mililiter   
       text3 += "{:.2f}".format(float(volsAA_R)/1000,2)+" ml" # transform mm^3 to mililiter
       filename = outfilename.replace("_tiv.nii.gz", ".pdf")
-      HippoDeepReport (d_orig, wdata_L, wdata_R, brainmask, text0, text1, text2, text3, filename)
+      # transform 2 std
+      SpatResol = np.asarray(img.header.get_zooms())
+      d_orig    = nibabel.apply_orientation(d_orig, trn )
+      wdata_L   = nibabel.apply_orientation(wdata_L, trn )
+      wdata_R   = nibabel.apply_orientation(wdata_R, trn )
+      brainmask = nibabel.apply_orientation(brainmask, trn )
+      SpatResol[int(trn[0,0])],  SpatResol[int(trn[1,0])], SpatResol[int(trn[2,0])] = SpatResol[0],  SpatResol[1], SpatResol[2]
+      # go
+      HippoDeepReport (SpatResol, d_orig, wdata_L, wdata_R, brainmask, text0, text1, text2, text3, filename)
       print (" Generated PDF report")
     except: print (" Generating PDF report failed") 
        

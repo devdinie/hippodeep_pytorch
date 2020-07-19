@@ -56,7 +56,7 @@ from fpdf import __version__ as fpdf_version
 
 
 
-def HippoDeepReport(data0, data1, data2, data3, text0, text1, text2, text3, filename):
+def HippoDeepReport(SpatResol, data0, data1, data2, data3, text0, text1, text2, text3, filename):
     
     #define some color lookup tables    
         
@@ -165,7 +165,21 @@ def HippoDeepReport(data0, data1, data2, data3, text0, text1, text2, text3, file
     #slice_per_line=4; width=47 # may no fit on a single page
     sparator=2
     
-     # --------------------------------------- CROP in Z -----------------------------------------   
+    # --------------------------------------- CROP in Y (AP) -----------------------------------------   
+    
+    # crop data in Y (otherwise may not fit on one page)
+    data3_axis1 = np.sum(np.sum(data3, axis=0), axis=1)     
+    min_axis1 = np.min(np.nonzero(data3_axis1))
+    max_axis1 = np.max(np.nonzero(data3_axis1))
+    delta=int(.2*(max_axis1-min_axis1))
+    min_axis1 = max (0,min_axis1-delta)
+    max_axis1 = min (data3.shape[1],max_axis1+delta)     
+    data0 = data0 [:, min_axis1:max_axis1, :] 
+    data1 = data1 [:, min_axis1:max_axis1, :]
+    data2 = data2 [:, min_axis1:max_axis1, : ]
+    data0 /= np.max(data0) 
+    
+    # --------------------------------------- CROP in Z (FH) -----------------------------------------   
      
     # crop data in Z (otherwise may not fit on one page)
     data3_axis2 = np.sum(np.sum(data3, axis=0), axis=0)     
@@ -179,12 +193,14 @@ def HippoDeepReport(data0, data1, data2, data3, text0, text1, text2, text3, file
     data2 = data2 [:, :, min_axis2:max_axis2]
     data0 /= np.max(data0)    
     
+    
     # --------------------------------------- AXIAL ----------------------------------------------
 
     # transformations
     data0 = np.rot90(data0, axes=(0,1))
     data1 = np.rot90(data1, axes=(0,1))
     data2 = np.rot90(data2, axes=(0,1))
+    SpatResol[1], SpatResol[0] = SpatResol[0], SpatResol[1]
 
     # find all slices that contain some part of either ROI 
     slices=[]; npoints=[]
@@ -200,13 +216,15 @@ def HippoDeepReport(data0, data1, data2, data3, text0, text1, text2, text3, file
     elif len(slices)>slice_per_line:
       target=slice_per_line # or 1 line
     else: target=len(slices) # or just all all slices
-    step = int(len(slices)/target)
-    start = int((len(slices)-target*step)/2)
-    slices = slices[start::step]
-    slices = slices [0:target]
-     
-    height=width * data0.shape[0]/data0.shape[1]
-    i=0     
+    if len(slices)==0: print ("Error: no ROI overlap found")
+    else:
+      step = int(len(slices)/target)
+      start = int((len(slices)-target*step)/2)
+      slices = slices[start::step]
+      slices = slices [0:target]
+       
+    height=width * data0.shape[0]/data0.shape[1] * SpatResol[0]/SpatResol[1]
+    i=0; ypos=yoffset    
     for slice in slices:
         imgdata0 = data0[:,:,slice]/np.max(data0)*255
         imgdata0 = imgdata0.astype(np.uint8)
@@ -265,6 +283,7 @@ def HippoDeepReport(data0, data1, data2, data3, text0, text1, text2, text3, file
     data0 = np.rot90(data0, axes=(1,2))
     data1 = np.rot90(data1, axes=(1,2))
     data2 = np.rot90(data2, axes=(1,2))
+    SpatResol[2], SpatResol[1] = SpatResol[1], SpatResol[2]
 
     # find all slices that contain some part of either ROI 
     slices=[]; npoints=[]
@@ -280,13 +299,15 @@ def HippoDeepReport(data0, data1, data2, data3, text0, text1, text2, text3, file
     elif len(slices)>slice_per_line:
       target=slice_per_line # or 1 line
     else: target=len(slices) # or just all all slices
-    step = int(len(slices)/target)
-    start = int((len(slices)-target*step)/2)
-    slices = slices[start::step]
-    slices = slices [0:target]
+    if len(slices)==0: print ("Error: no ROI overlap found")
+    else:
+      step = int(len(slices)/target)
+      start = int((len(slices)-target*step)/2)
+      slices = slices[start::step]
+      slices = slices [0:target]
      
-    height=width * data0.shape[1]/data0.shape[2]
-    i=0     
+    height=width * data0.shape[1]/data0.shape[2] * SpatResol[1]/SpatResol[2]
+    i=0; ypos=yoffset     
     for slice in slices:
         imgdata0 = data0[slice,:,:]/np.max(data0)*255
         imgdata0 = imgdata0.astype(np.uint8)
@@ -339,6 +360,7 @@ def HippoDeepReport(data0, data1, data2, data3, text0, text1, text2, text3, file
     data0 = np.rot90(data0, axes=(0,1),k=3)
     data1 = np.rot90(data1, axes=(0,1),k=3)
     data2 = np.rot90(data2, axes=(0,1),k=3)
+    SpatResol[1], SpatResol[0] = SpatResol[0], SpatResol[1]
 
     # find all slices that contain some part of either ROI 
     slices=[]; npoints=[]
@@ -351,13 +373,15 @@ def HippoDeepReport(data0, data1, data2, data3, text0, text1, text2, text3, file
     if len(slices)>slice_per_line:
       target=slice_per_line # or 1 line
     else: target=len(slices) # or just all all slices
-    step = int(len(slices)/target)
-    start = int((len(slices)-target*step)/2)
-    slices = slices[start::step]
-    slices = slices [0:target]
+    if len(slices)==0: print ("Error: no ROI overlap found")
+    else:
+      step = int(len(slices)/target)
+      start = int((len(slices)-target*step)/2)
+      slices = slices[start::step]
+      slices = slices [0:target]
 
-    height=width * data0.shape[0]/data0.shape[1]
-    i=0     
+    height=width * data0.shape[0]/data0.shape[1] * SpatResol[0]/SpatResol[1]
+    i=0; ypos=yoffset     
     for slice in slices:
         imgdata0 = data0[:,:,slice]/np.max(data0)*255
         imgdata0 = imgdata0.astype(np.uint8)
@@ -407,16 +431,18 @@ def HippoDeepReport(data0, data1, data2, data3, text0, text1, text2, text3, file
     if len(slices)>slice_per_line:
       target=slice_per_line # or 1 line
     else: target=len(slices) # or just all all slices
-    step = int(len(slices)/target)
-    start = int((len(slices)-target*step)/2)
-    slices = slices[start::step]
-    slices = slices [0:target]
+    if len(slices)==0: print ("Error: no ROI overlap found")
+    else:
+      step = int(len(slices)/target)
+      start = int((len(slices)-target*step)/2)
+      slices = slices[start::step]
+      slices = slices [0:target]    
 
     #invert slice order
     slices = slices[::-1]
 
-    height=width * data0.shape[0]/data0.shape[1]
-    i=0     
+    height=width * data0.shape[0]/data0.shape[1] * SpatResol[0]/SpatResol[1]
+    i=0; ypos=yoffset     
     for slice in slices:
         imgdata0 = data0[:,:,slice]/np.max(data0)*255
         imgdata0 = imgdata0.astype(np.uint8)
@@ -469,7 +495,7 @@ def main():
     dirname  = os.path.dirname(filename)
     basename = os.path.splitext(os.path.splitext(os.path.basename(filename))[0])[0]
     SpatResol = np.asarray(img0.header.get_zooms())
-
+    
     try: img1 = nib.load(os.path.join(dirname,basename+"_mask_L.nii.gz"))
     except: print ("Error reading "+basename+"_mask_L.nii.gz"); sys.exit(2)
     data1 = np.asanyarray(img1.dataobj).astype(np.float32)
@@ -484,6 +510,23 @@ def main():
     except: print ("Error reading "+basename+"_brain_mask.nii.gz"); sys.exit(2)
     data3 = np.asanyarray(img3.dataobj).astype(np.float32)
     #data3 /= np.max(data3) # normalize to 1.0    
+
+    o1 = nib.orientations.io_orientation(img0.affine)
+    o2 = np.array([[ 0., -1.], [ 1.,  1.], [ 2.,  1.]]) # We work in LAS space (same as the mni_icbm152 template)
+    trn = nib.orientations.ornt_transform(o1, o2) # o1 to o2 (apply to o2 to obtain o1)
+    print (trn)
+    print (trn[0,0])
+    print (trn[1,0])
+    print (trn[2,0])
+    print (data0.shape)
+    print (SpatResol)
+    data0 = nib.apply_orientation(data0, trn )
+    data1 = nib.apply_orientation(data1, trn )
+    data2 = nib.apply_orientation(data2, trn )
+    data3 = nib.apply_orientation(data3, trn )
+    SpatResol[int(trn[0,0])],  SpatResol[int(trn[1,0])], SpatResol[int(trn[2,0])] = SpatResol[0],  SpatResol[1], SpatResol[2]
+    print (data0.shape)
+    print (SpatResol)
     
     try: 
       with open(os.path.join(dirname,basename+"_hippoLR_volumes.csv")) as csv_file:
@@ -505,7 +548,7 @@ def main():
     text2 += "{:.2f}".format(float(volsAA_L)/1000,2)+" ml" # transform mm^3 to mililiter   
     text3 += "{:.2f}".format(float(volsAA_R)/1000,2)+" ml" # transform mm^3 to mililiter
     filename = os.path.join(dirname,basename+".pdf")
-    HippoDeepReport (data0, data1, data2, data3, text0, text1, text2, text3, filename)
+    HippoDeepReport (SpatResol,data0, data1, data2, data3, text0, text1, text2, text3, filename)
 
     #end
     if sys.platform=="win32": os.system("pause") # windows
