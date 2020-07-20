@@ -558,8 +558,8 @@ for fname in sys.argv[1:]:
 
         DHW3 = xyz_to_DHW3(widx, imgcroproi_affine, imgcroproi_shape)
 
-        wdata_L = np.zeros(img.shape, np.uint8)
-        wdata_R = np.zeros(img.shape, np.uint8)
+        wdata_L = np.zeros(img.shape[:3], np.uint8)
+        wdata_R = np.zeros(img.shape[:3], np.uint8)
 
         d = torch.tensor(output[0].T, dtype=torch.float32)
         outDHW = F.grid_sample(d[None,None], torch.tensor(DHW3[None]), align_corners=True)
