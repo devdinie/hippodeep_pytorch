@@ -42,7 +42,7 @@ to compile an executable:
 * your compiled executable should be under .\dist\HippoDeep.exe
 
 A precompiled Windows executable can be found under the Release section 
-<a href="https://github.com/bfoe/hippodeep_pytorch/releases/download/v0.3/HippoDeep.exe">here</a>
+<a href="https://github.com/bfoe/hippodeep_pytorch/releases/download/v0.3/HippoDeep_Windows_v0.3.zip">here</a>
 
 ## Usage:
 To use the program, simply call:
