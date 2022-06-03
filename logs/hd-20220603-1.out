@@ -1,0 +1,828 @@
+Using all available CPU threads
+Loading image MAGeT_testData/ADB0021_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1477597
+ Hippocampal volumes (L,R) 3692.925068300333 3856.2493360268836
+ Generating PDF report failed
+ Elapsed time for subject 4.49s 
+ To display using fslview, try:
+  fslview MAGeT_testData/ADB0021_T1w.nii.gz MAGeT_testData/ADB0021_T1w_mask_L.nii.gz -t .5 MAGeT_testData/ADB0021_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.33
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/ADB0024_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1272361
+ Hippocampal volumes (L,R) 2786.7395247135264 2632.233883914187
+ Generating PDF report failed
+ Elapsed time for subject 3.58s 
+ To display using fslview, try:
+  fslview MAGeT_testData/ADB0024_T1w.nii.gz MAGeT_testData/ADB0024_T1w_mask_L.nii.gz -t .5 MAGeT_testData/ADB0024_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.33
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/ADB0031_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1472275
+ Hippocampal volumes (L,R) 3055.6911165625506 3259.2477465461484
+ Generating PDF report failed
+ Elapsed time for subject 3.55s 
+ To display using fslview, try:
+  fslview MAGeT_testData/ADB0031_T1w.nii.gz MAGeT_testData/ADB0031_T1w_mask_L.nii.gz -t .5 MAGeT_testData/ADB0031_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.33
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/ADB0051_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1638740
+ Hippocampal volumes (L,R) 3931.6340552583647 4096.138956659768
+ Generating PDF report failed
+ Elapsed time for subject 3.61s 
+ To display using fslview, try:
+  fslview MAGeT_testData/ADB0051_T1w.nii.gz MAGeT_testData/ADB0051_T1w_mask_L.nii.gz -t .5 MAGeT_testData/ADB0051_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.33
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/ADB0060_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1575953
+ Hippocampal volumes (L,R) 3632.46946514804 4017.530260317014
+ Generating PDF report failed
+ Elapsed time for subject 3.79s 
+ To display using fslview, try:
+  fslview MAGeT_testData/ADB0060_T1w.nii.gz MAGeT_testData/ADB0060_T1w_mask_L.nii.gz -t .5 MAGeT_testData/ADB0060_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.33
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/ADB0073_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1264398
+ Hippocampal volumes (L,R) 3252.435121648251 3262.1142885310583
+ Generating PDF report failed
+ Elapsed time for subject 3.55s 
+ To display using fslview, try:
+  fslview MAGeT_testData/ADB0073_T1w.nii.gz MAGeT_testData/ADB0073_T1w_mask_L.nii.gz -t .5 MAGeT_testData/ADB0073_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.33
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/ADB0087_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1657892
+ Hippocampal volumes (L,R) 3192.9436158576086 3194.3695962445877
+ Generating PDF report failed
+ Elapsed time for subject 3.76s 
+ To display using fslview, try:
+  fslview MAGeT_testData/ADB0087_T1w.nii.gz MAGeT_testData/ADB0087_T1w_mask_L.nii.gz -t .5 MAGeT_testData/ADB0087_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.33
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/ADB0094_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1378371
+ Hippocampal volumes (L,R) 3098.5107614249105 3020.992134546563
+ Generating PDF report failed
+ Elapsed time for subject 3.55s 
+ To display using fslview, try:
+  fslview MAGeT_testData/ADB0094_T1w.nii.gz MAGeT_testData/ADB0094_T1w_mask_L.nii.gz -t .5 MAGeT_testData/ADB0094_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.33
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/ADB0146_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1254751
+ Hippocampal volumes (L,R) 2628.2480182168897 2275.9994916194696
+ Generating PDF report failed
+ Elapsed time for subject 3.57s 
+ To display using fslview, try:
+  fslview MAGeT_testData/ADB0146_T1w.nii.gz MAGeT_testData/ADB0146_T1w_mask_L.nii.gz -t .5 MAGeT_testData/ADB0146_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.33
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/ADB0239_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1396574
+ Hippocampal volumes (L,R) 3323.2983207603784 3421.344645365065
+ Generating PDF report failed
+ Elapsed time for subject 3.62s 
+ To display using fslview, try:
+  fslview MAGeT_testData/ADB0239_T1w.nii.gz MAGeT_testData/ADB0239_T1w_mask_L.nii.gz -t .5 MAGeT_testData/ADB0239_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.33
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/ADB0252_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1303631
+ Hippocampal volumes (L,R) 3436.7694607392427 3532.141277184112
+ Generating PDF report failed
+ Elapsed time for subject 3.56s 
+ To display using fslview, try:
+  fslview MAGeT_testData/ADB0252_T1w.nii.gz MAGeT_testData/ADB0252_T1w_mask_L.nii.gz -t .5 MAGeT_testData/ADB0252_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.33
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/ADNI003S6257_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1555498
+ Hippocampal volumes (L,R) 3587.752450980392 3522.3301470588235
+ Generating PDF report failed
+ Elapsed time for subject 3.74s 
+ To display using fslview, try:
+  fslview MAGeT_testData/ADNI003S6257_T1w.nii.gz MAGeT_testData/ADNI003S6257_T1w_mask_L.nii.gz -t .5 MAGeT_testData/ADNI003S6257_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.35
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/ADNI007S6120_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1578326
+ Hippocampal volumes (L,R) 3026.853431372549 3246.5311274509804
+ Generating PDF report failed
+ Elapsed time for subject 3.87s 
+ To display using fslview, try:
+  fslview MAGeT_testData/ADNI007S6120_T1w.nii.gz MAGeT_testData/ADNI007S6120_T1w_mask_L.nii.gz -t .5 MAGeT_testData/ADNI007S6120_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.35
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/ADNI023S4448_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1371646
+ Hippocampal volumes (L,R) 3130.6105392156865 3482.9387254901962
+ Generating PDF report failed
+ Elapsed time for subject 3.76s 
+ To display using fslview, try:
+  fslview MAGeT_testData/ADNI023S4448_T1w.nii.gz MAGeT_testData/ADNI023S4448_T1w_mask_L.nii.gz -t .5 MAGeT_testData/ADNI023S4448_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.35
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/ADNI032S6293_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1506241
+ Hippocampal volumes (L,R) 2970.625245098039 3247.312254901961
+ Generating PDF report failed
+ Elapsed time for subject 3.81s 
+ To display using fslview, try:
+  fslview MAGeT_testData/ADNI032S6293_T1w.nii.gz MAGeT_testData/ADNI032S6293_T1w_mask_L.nii.gz -t .5 MAGeT_testData/ADNI032S6293_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.35
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/ADNI033S6266_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1543503
+ Hippocampal volumes (L,R) 3318.693137254902 3809.0394607843136
+ Generating PDF report failed
+ Elapsed time for subject 3.52s 
+ To display using fslview, try:
+  fslview MAGeT_testData/ADNI033S6266_T1w.nii.gz MAGeT_testData/ADNI033S6266_T1w_mask_L.nii.gz -t .5 MAGeT_testData/ADNI033S6266_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.33
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/ADNI036S6316_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1387937
+ Hippocampal volumes (L,R) 3358.397789882331 3609.8810903044932
+ Generating PDF report failed
+ Elapsed time for subject 3.44s 
+ To display using fslview, try:
+  fslview MAGeT_testData/ADNI036S6316_T1w.nii.gz MAGeT_testData/ADNI036S6316_T1w_mask_L.nii.gz -t .5 MAGeT_testData/ADNI036S6316_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.33
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/ADNI094S6250_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1256527
+ Hippocampal volumes (L,R) 2753.9926018368596 2776.141110720348
+ Generating PDF report failed
+ Elapsed time for subject 3.44s 
+ To display using fslview, try:
+  fslview MAGeT_testData/ADNI094S6250_T1w.nii.gz MAGeT_testData/ADNI094S6250_T1w_mask_L.nii.gz -t .5 MAGeT_testData/ADNI094S6250_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.33
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/ADNI116S6624_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1611847
+ Hippocampal volumes (L,R) 3310.8928921568627 3905.5857843137255
+ Generating PDF report failed
+ Elapsed time for subject 3.50s 
+ To display using fslview, try:
+  fslview MAGeT_testData/ADNI116S6624_T1w.nii.gz MAGeT_testData/ADNI116S6624_T1w_mask_L.nii.gz -t .5 MAGeT_testData/ADNI116S6624_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.33
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/ADNI141S6178_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1276268
+ Hippocampal volumes (L,R) 3202.426960784314 3211.1051470588236
+ Generating PDF report failed
+ Elapsed time for subject 3.47s 
+ To display using fslview, try:
+  fslview MAGeT_testData/ADNI141S6178_T1w.nii.gz MAGeT_testData/ADNI141S6178_T1w_mask_L.nii.gz -t .5 MAGeT_testData/ADNI141S6178_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.33
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/ADNI168S6285_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1345587
+ Hippocampal volumes (L,R) 3226.8257352941177 3302.228431372549
+ Generating PDF report failed
+ Elapsed time for subject 3.79s 
+ To display using fslview, try:
+  fslview MAGeT_testData/ADNI168S6285_T1w.nii.gz MAGeT_testData/ADNI168S6285_T1w_mask_L.nii.gz -t .5 MAGeT_testData/ADNI168S6285_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.35
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/ADNI168S6318_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1432077
+ Hippocampal volumes (L,R) 3083.7549019607845 3381.1269607843137
+ Generating PDF report failed
+ Elapsed time for subject 3.79s 
+ To display using fslview, try:
+  fslview MAGeT_testData/ADNI168S6318_T1w.nii.gz MAGeT_testData/ADNI168S6318_T1w_mask_L.nii.gz -t .5 MAGeT_testData/ADNI168S6318_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.35
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/ADNI168S6371_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1496743
+ Hippocampal volumes (L,R) 3446.962254901961 3413.725735294118
+ Generating PDF report failed
+ Elapsed time for subject 3.79s 
+ To display using fslview, try:
+  fslview MAGeT_testData/ADNI168S6371_T1w.nii.gz MAGeT_testData/ADNI168S6371_T1w_mask_L.nii.gz -t .5 MAGeT_testData/ADNI168S6371_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.35
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/ADNI941S4292_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1453081
+ Hippocampal volumes (L,R) 2965.549827188779 2986.5130123155113
+ Generating PDF report failed
+ Elapsed time for subject 3.48s 
+ To display using fslview, try:
+  fslview MAGeT_testData/ADNI941S4292_T1w.nii.gz MAGeT_testData/ADNI941S4292_T1w_mask_L.nii.gz -t .5 MAGeT_testData/ADNI941S4292_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.33
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/ADNI941S6080_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1278113
+ Hippocampal volumes (L,R) 2307.122601042472 2601.2841000352455
+ Generating PDF report failed
+ Elapsed time for subject 3.43s 
+ To display using fslview, try:
+  fslview MAGeT_testData/ADNI941S6080_T1w.nii.gz MAGeT_testData/ADNI941S6080_T1w_mask_L.nii.gz -t .5 MAGeT_testData/ADNI941S6080_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.33
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/ADNI941S6496_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1467189
+ Hippocampal volumes (L,R) 2635.4257352941177 3029.568382352941
+ Generating PDF report failed
+ Elapsed time for subject 3.76s 
+ To display using fslview, try:
+  fslview MAGeT_testData/ADNI941S6496_T1w.nii.gz MAGeT_testData/ADNI941S6496_T1w_mask_L.nii.gz -t .5 MAGeT_testData/ADNI941S6496_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.35
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/CC110411_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1663209
+ Hippocampal volumes (L,R) 4462.116225356188 4401.752472679067
+ Generating PDF report failed
+ Elapsed time for subject 3.76s 
+ To display using fslview, try:
+  fslview MAGeT_testData/CC110411_T1w.nii.gz MAGeT_testData/CC110411_T1w_mask_L.nii.gz -t .5 MAGeT_testData/CC110411_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.35
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/CC120208_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1561376
+ Hippocampal volumes (L,R) 3553.0555218112977 3224.4835601019468
+ Generating PDF report failed
+ Elapsed time for subject 3.76s 
+ To display using fslview, try:
+  fslview MAGeT_testData/CC120208_T1w.nii.gz MAGeT_testData/CC120208_T1w_mask_L.nii.gz -t .5 MAGeT_testData/CC120208_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.35
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/CC120234_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1253256
+ Hippocampal volumes (L,R) 3181.2194969467632 3270.406769354065
+ Generating PDF report failed
+ Elapsed time for subject 3.76s 
+ To display using fslview, try:
+  fslview MAGeT_testData/CC120234_T1w.nii.gz MAGeT_testData/CC120234_T1w_mask_L.nii.gz -t .5 MAGeT_testData/CC120234_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.35
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/CC120347_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1335654
+ Hippocampal volumes (L,R) 3795.048250876941 3672.8428361193733
+ Generating PDF report failed
+ Elapsed time for subject 3.81s 
+ To display using fslview, try:
+  fslview MAGeT_testData/CC120347_T1w.nii.gz MAGeT_testData/CC120347_T1w_mask_L.nii.gz -t .5 MAGeT_testData/CC120347_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.35
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/CC121194_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1064602
+ Hippocampal volumes (L,R) 3028.6135116683336 3012.078457125409
+ Generating PDF report failed
+ Elapsed time for subject 3.81s 
+ To display using fslview, try:
+  fslview MAGeT_testData/CC121194_T1w.nii.gz MAGeT_testData/CC121194_T1w_mask_L.nii.gz -t .5 MAGeT_testData/CC121194_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.35
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/CC210657_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1492084
+ Hippocampal volumes (L,R) 3423.2076692121345 3503.684666242075
+ Generating PDF report failed
+ Elapsed time for subject 3.83s 
+ To display using fslview, try:
+  fslview MAGeT_testData/CC210657_T1w.nii.gz MAGeT_testData/CC210657_T1w_mask_L.nii.gz -t .5 MAGeT_testData/CC210657_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.35
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/CC220526_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1241095
+ Hippocampal volumes (L,R) 3130.448254848637 3102.2440707814962
+ Generating PDF report failed
+ Elapsed time for subject 3.75s 
+ To display using fslview, try:
+  fslview MAGeT_testData/CC220526_T1w.nii.gz MAGeT_testData/CC220526_T1w_mask_L.nii.gz -t .5 MAGeT_testData/CC220526_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.35
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/CC221977_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1475537
+ Hippocampal volumes (L,R) 3582.0094967228088 3660.5002192314837
+ Generating PDF report failed
+ Elapsed time for subject 3.79s 
+ To display using fslview, try:
+  fslview MAGeT_testData/CC221977_T1w.nii.gz MAGeT_testData/CC221977_T1w_mask_L.nii.gz -t .5 MAGeT_testData/CC221977_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.35
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/CC310331_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1522821
+ Hippocampal volumes (L,R) 3528.788844215285 3711.3418676108863
+ Generating PDF report failed
+ Elapsed time for subject 3.77s 
+ To display using fslview, try:
+  fslview MAGeT_testData/CC310331_T1w.nii.gz MAGeT_testData/CC310331_T1w_mask_L.nii.gz -t .5 MAGeT_testData/CC310331_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.35
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/CC310463_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1573158
+ Hippocampal volumes (L,R) 3999.048684221965 4108.443679220545
+ Generating PDF report failed
+ Elapsed time for subject 3.76s 
+ To display using fslview, try:
+  fslview MAGeT_testData/CC310463_T1w.nii.gz MAGeT_testData/CC310463_T1w_mask_L.nii.gz -t .5 MAGeT_testData/CC310463_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.35
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/CC312222_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1444307
+ Hippocampal volumes (L,R) 3316.0157091697843 3481.8199505121834
+ Generating PDF report failed
+ Elapsed time for subject 3.77s 
+ To display using fslview, try:
+  fslview MAGeT_testData/CC312222_T1w.nii.gz MAGeT_testData/CC312222_T1w_mask_L.nii.gz -t .5 MAGeT_testData/CC312222_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.35
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/CC320379_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1484546
+ Hippocampal volumes (L,R) 3525.846686027436 3802.790928406009
+ Generating PDF report failed
+ Elapsed time for subject 3.77s 
+ To display using fslview, try:
+  fslview MAGeT_testData/CC320379_T1w.nii.gz MAGeT_testData/CC320379_T1w_mask_L.nii.gz -t .5 MAGeT_testData/CC320379_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.35
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/CC410032_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1413090
+ Hippocampal volumes (L,R) 3481.5464912189473 3535.160709487563
+ Generating PDF report failed
+ Elapsed time for subject 3.77s 
+ To display using fslview, try:
+  fslview MAGeT_testData/CC410032_T1w.nii.gz MAGeT_testData/CC410032_T1w_mask_L.nii.gz -t .5 MAGeT_testData/CC410032_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.35
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/CC410094_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1444682
+ Hippocampal volumes (L,R) 3911.574310733738 3794.04631662443
+ Generating PDF report failed
+ Elapsed time for subject 3.74s 
+ To display using fslview, try:
+  fslview MAGeT_testData/CC410094_T1w.nii.gz MAGeT_testData/CC410094_T1w_mask_L.nii.gz -t .5 MAGeT_testData/CC410094_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.35
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/CC410097_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1272351
+ Hippocampal volumes (L,R) 3219.070301773023 3303.668314136683
+ Generating PDF report failed
+ Elapsed time for subject 3.78s 
+ To display using fslview, try:
+  fslview MAGeT_testData/CC410097_T1w.nii.gz MAGeT_testData/CC410097_T1w_mask_L.nii.gz -t .5 MAGeT_testData/CC410097_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.35
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/CC410287_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1406352
+ Hippocampal volumes (L,R) 3111.0763661542496 3369.3125699976213
+ Generating PDF report failed
+ Elapsed time for subject 3.78s 
+ To display using fslview, try:
+  fslview MAGeT_testData/CC410287_T1w.nii.gz MAGeT_testData/CC410287_T1w_mask_L.nii.gz -t .5 MAGeT_testData/CC410287_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.35
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/CC410323_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1393400
+ Hippocampal volumes (L,R) 2979.288261219519 3003.9480795565537
+ Generating PDF report failed
+ Elapsed time for subject 3.77s 
+ To display using fslview, try:
+  fslview MAGeT_testData/CC410323_T1w.nii.gz MAGeT_testData/CC410323_T1w_mask_L.nii.gz -t .5 MAGeT_testData/CC410323_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.35
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/CC420149_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1793290
+ Hippocampal volumes (L,R) 3420.1353639068457 3736.0301140242186
+ Generating PDF report failed
+ Elapsed time for subject 3.83s 
+ To display using fslview, try:
+  fslview MAGeT_testData/CC420149_T1w.nii.gz MAGeT_testData/CC420149_T1w_mask_L.nii.gz -t .5 MAGeT_testData/CC420149_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.35
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/CC510259_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1361844
+ Hippocampal volumes (L,R) 3031.933228282139 2982.164578416109
+ Generating PDF report failed
+ Elapsed time for subject 3.77s 
+ To display using fslview, try:
+  fslview MAGeT_testData/CC510259_T1w.nii.gz MAGeT_testData/CC510259_T1w_mask_L.nii.gz -t .5 MAGeT_testData/CC510259_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.35
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/CC520002_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1315633
+ Hippocampal volumes (L,R) 3353.298909254357 3465.6273205097677
+ Generating PDF report failed
+ Elapsed time for subject 3.76s 
+ To display using fslview, try:
+  fslview MAGeT_testData/CC520002_T1w.nii.gz MAGeT_testData/CC520002_T1w_mask_L.nii.gz -t .5 MAGeT_testData/CC520002_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.35
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/CC520197_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1191523
+ Hippocampal volumes (L,R) 3429.5563024265994 3500.0599774556345
+ Generating PDF report failed
+ Elapsed time for subject 3.72s 
+ To display using fslview, try:
+  fslview MAGeT_testData/CC520197_T1w.nii.gz MAGeT_testData/CC520197_T1w_mask_L.nii.gz -t .5 MAGeT_testData/CC520197_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.35
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/CC520398_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1297467
+ Hippocampal volumes (L,R) 3404.8392785863466 3371.514018479112
+ Generating PDF report failed
+ Elapsed time for subject 3.76s 
+ To display using fslview, try:
+  fslview MAGeT_testData/CC520398_T1w.nii.gz MAGeT_testData/CC520398_T1w_mask_L.nii.gz -t .5 MAGeT_testData/CC520398_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.35
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/CC610469_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1353204
+ Hippocampal volumes (L,R) 2651.877077727038 2790.934385391246
+ Generating PDF report failed
+ Elapsed time for subject 3.74s 
+ To display using fslview, try:
+  fslview MAGeT_testData/CC610469_T1w.nii.gz MAGeT_testData/CC610469_T1w_mask_L.nii.gz -t .5 MAGeT_testData/CC610469_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.35
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/CC710566_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1590263
+ Hippocampal volumes (L,R) 3232.981625501292 2880.129039911793
+ Generating PDF report failed
+ Elapsed time for subject 3.74s 
+ To display using fslview, try:
+  fslview MAGeT_testData/CC710566_T1w.nii.gz MAGeT_testData/CC710566_T1w_mask_L.nii.gz -t .5 MAGeT_testData/CC710566_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.35
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/CC720646_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1446045
+ Hippocampal volumes (L,R) 2819.779483557454 2761.57776638934
+ Generating PDF report failed
+ Elapsed time for subject 3.79s 
+ To display using fslview, try:
+  fslview MAGeT_testData/CC720646_T1w.nii.gz MAGeT_testData/CC720646_T1w_mask_L.nii.gz -t .5 MAGeT_testData/CC720646_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.35
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/HAD0006_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1328820
+ Hippocampal volumes (L,R) 3268.5414215686274 3329.711519607843
+ Generating PDF report failed
+ Elapsed time for subject 2.63s 
+ To display using fslview, try:
+  fslview MAGeT_testData/HAD0006_T1w.nii.gz MAGeT_testData/HAD0006_T1w_mask_L.nii.gz -t .5 MAGeT_testData/HAD0006_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.27
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/HAD0007_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1221781
+ Hippocampal volumes (L,R) 3789.6089676177103 3796.001369408109
+ Generating PDF report failed
+ Elapsed time for subject 2.64s 
+ To display using fslview, try:
+  fslview MAGeT_testData/HAD0007_T1w.nii.gz MAGeT_testData/HAD0007_T1w_mask_L.nii.gz -t .5 MAGeT_testData/HAD0007_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.27
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/HAD0013_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1388606
+ Hippocampal volumes (L,R) 3596.203854044796 3646.649686430938
+ Generating PDF report failed
+ Elapsed time for subject 2.67s 
+ To display using fslview, try:
+  fslview MAGeT_testData/HAD0013_T1w.nii.gz MAGeT_testData/HAD0013_T1w_mask_L.nii.gz -t .5 MAGeT_testData/HAD0013_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.28
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/HAD0019_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1412500
+ Hippocampal volumes (L,R) 3542.6210784313726 3639.0220588235293
+ Generating PDF report failed
+ Elapsed time for subject 2.69s 
+ To display using fslview, try:
+  fslview MAGeT_testData/HAD0019_T1w.nii.gz MAGeT_testData/HAD0019_T1w_mask_L.nii.gz -t .5 MAGeT_testData/HAD0019_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.28
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/HAD0060_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1132741
+ Hippocampal volumes (L,R) 2741.7903700913002 2628.8134122360893
+ Generating PDF report failed
+ Elapsed time for subject 2.59s 
+ To display using fslview, try:
+  fslview MAGeT_testData/HAD0060_T1w.nii.gz MAGeT_testData/HAD0060_T1w_mask_L.nii.gz -t .5 MAGeT_testData/HAD0060_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.27
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/HAD0067_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1288536
+ Hippocampal volumes (L,R) 3839.1275417564 3958.0831818240035
+ Generating PDF report failed
+ Elapsed time for subject 2.65s 
+ To display using fslview, try:
+  fslview MAGeT_testData/HAD0067_T1w.nii.gz MAGeT_testData/HAD0067_T1w_mask_L.nii.gz -t .5 MAGeT_testData/HAD0067_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.27
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/HAD0095_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1313321
+ Hippocampal volumes (L,R) 2937.980882352941 2884.3789215686274
+ Generating PDF report failed
+ Elapsed time for subject 2.66s 
+ To display using fslview, try:
+  fslview MAGeT_testData/HAD0095_T1w.nii.gz MAGeT_testData/HAD0095_T1w_mask_L.nii.gz -t .5 MAGeT_testData/HAD0095_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.27
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/HAD0105_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1322118
+ Hippocampal volumes (L,R) 2621.538725490196 2937.3
+ Generating PDF report failed
+ Elapsed time for subject 2.67s 
+ To display using fslview, try:
+  fslview MAGeT_testData/HAD0105_T1w.nii.gz MAGeT_testData/HAD0105_T1w_mask_L.nii.gz -t .5 MAGeT_testData/HAD0105_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.27
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/HAD0110_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1421308
+ Hippocampal volumes (L,R) 2298.717644786256 2550.086026890689
+ Generating PDF report failed
+ Elapsed time for subject 2.76s 
+ To display using fslview, try:
+  fslview MAGeT_testData/HAD0110_T1w.nii.gz MAGeT_testData/HAD0110_T1w_mask_L.nii.gz -t .5 MAGeT_testData/HAD0110_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.28
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/HAD0213_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1337095
+ Hippocampal volumes (L,R) 3890.4325980392155 3992.9002450980392
+ Generating PDF report failed
+ Elapsed time for subject 2.68s 
+ To display using fslview, try:
+  fslview MAGeT_testData/HAD0213_T1w.nii.gz MAGeT_testData/HAD0213_T1w_mask_L.nii.gz -t .5 MAGeT_testData/HAD0213_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.27
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/HAD0216_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1501141
+ Hippocampal volumes (L,R) 4287.882843137255 4425.02205882353
+ Generating PDF report failed
+ Elapsed time for subject 2.72s 
+ To display using fslview, try:
+  fslview MAGeT_testData/HAD0216_T1w.nii.gz MAGeT_testData/HAD0216_T1w_mask_L.nii.gz -t .5 MAGeT_testData/HAD0216_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.28
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/HAD0251_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1459066
+ Hippocampal volumes (L,R) 4000.372036884415 4080.4561099793195
+ Generating PDF report failed
+ Elapsed time for subject 2.71s 
+ To display using fslview, try:
+  fslview MAGeT_testData/HAD0251_T1w.nii.gz MAGeT_testData/HAD0251_T1w_mask_L.nii.gz -t .5 MAGeT_testData/HAD0251_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.28
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/HAD0258_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1395426
+ Hippocampal volumes (L,R) 3359.646038240502 3507.5065864743065
+ Generating PDF report failed
+ Elapsed time for subject 2.69s 
+ To display using fslview, try:
+  fslview MAGeT_testData/HAD0258_T1w.nii.gz MAGeT_testData/HAD0258_T1w_mask_L.nii.gz -t .5 MAGeT_testData/HAD0258_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.28
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/HAD0268_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1287657
+ Hippocampal volumes (L,R) 3150.369607843137 3221.6860294117646
+ Generating PDF report failed
+ Elapsed time for subject 2.61s 
+ To display using fslview, try:
+  fslview MAGeT_testData/HAD0268_T1w.nii.gz MAGeT_testData/HAD0268_T1w_mask_L.nii.gz -t .5 MAGeT_testData/HAD0268_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.27
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/HAD0272_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1671379
+ Hippocampal volumes (L,R) 3625.3158112467377 4048.1452090008775
+ Generating PDF report failed
+ Elapsed time for subject 2.81s 
+ To display using fslview, try:
+  fslview MAGeT_testData/HAD0272_T1w.nii.gz MAGeT_testData/HAD0272_T1w_mask_L.nii.gz -t .5 MAGeT_testData/HAD0272_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.28
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/HAD0282_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1629308
+ Hippocampal volumes (L,R) 4041.0351124128315 3634.760130680953
+ Generating PDF report failed
+ Elapsed time for subject 2.78s 
+ To display using fslview, try:
+  fslview MAGeT_testData/HAD0282_T1w.nii.gz MAGeT_testData/HAD0282_T1w_mask_L.nii.gz -t .5 MAGeT_testData/HAD0282_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.28
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/HAD0290_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1236511
+ Hippocampal volumes (L,R) 3145.4942358472886 3247.9890846535436
+ Generating PDF report failed
+ Elapsed time for subject 2.62s 
+ To display using fslview, try:
+  fslview MAGeT_testData/HAD0290_T1w.nii.gz MAGeT_testData/HAD0290_T1w_mask_L.nii.gz -t .5 MAGeT_testData/HAD0290_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.27
+Done
+Using all available CPU threads
+Loading image MAGeT_testData/HAD0300_T1w.nii.gz
+ *** Warning: the header of this nifti file has no qform_code defined.
+ Fix the header manually or reconvert from the original DICOM.
+ Estimated intra-cranial volume (mm^3) (native space): 1472496
+ Hippocampal volumes (L,R) 3142.2741518064095 3472.078551721499
+ Generating PDF report failed
+ Elapsed time for subject 2.78s 
+ To display using fslview, try:
+  fslview MAGeT_testData/HAD0300_T1w.nii.gz MAGeT_testData/HAD0300_T1w_mask_L.nii.gz -t .5 MAGeT_testData/HAD0300_T1w_mask_R.nii.gz -t .5 &
+Peak memory used (Gb) 2.28
+Done

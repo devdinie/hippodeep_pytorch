@@ -1,0 +1,6 @@
+*.nii
+*.nii.gz
+harp_testdata/
+testData/
+MAGeT_testData/
+
